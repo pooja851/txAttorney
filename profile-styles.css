@@ -1,0 +1,414 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Times New Roman", serif;
+  background: linear-gradient(135deg, #f5f5dc 0%, #e6e6e6 100%);
+  min-height: 100vh;
+  background-attachment: fixed;
+}
+
+.profile-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  background: rgba(245, 245, 220, 0.95);
+  min-height: 100vh;
+}
+
+/* Header Styles */
+.header {
+  background: rgba(245, 245, 220, 0.95);
+  padding: 20px;
+  border-bottom: 2px solid #d4af37;
+  backdrop-filter: blur(10px);
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.header-icon {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+}
+
+.header-icon.left {
+  position: absolute;
+  left: 50px;
+}
+
+.header-icon.right {
+  position: absolute;
+  right: 50px;
+}
+
+.header-text {
+  text-align: center;
+  position: relative;
+}
+
+.texas-outline {
+  position: absolute;
+  top: -10px;
+  left: -50px;
+  z-index: 1;
+}
+
+.texas-icon {
+  width: 100px;
+  height: 80px;
+  opacity: 0.3;
+}
+
+.site-title {
+  font-size: 48px;
+  font-weight: bold;
+  color: #2c3e50;
+  letter-spacing: 2px;
+  position: relative;
+  z-index: 2;
+}
+
+.tagline {
+  font-size: 24px;
+  color: #34495e;
+  font-style: italic;
+  margin-top: 5px;
+}
+
+/* Main Content */
+.main-content {
+  padding: 40px;
+}
+
+.firm-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.firm-name {
+  font-size: 48px;
+  color: #2c3e50;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.firm-logo {
+  font-size: 60px;
+  margin: 20px 0;
+  color: #d4af37;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.firm-subtitle {
+  font-size: 24px;
+  color: #34495e;
+  font-style: italic;
+  font-weight: normal;
+}
+
+/* Content Grid */
+.content-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  align-items: start;
+}
+
+.left-content {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.team-photo {
+  width: 100%;
+}
+
+.team-image {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Contact Info */
+.contact-info {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.contact-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.contact-icon {
+  font-size: 24px;
+  margin-top: 2px;
+  color: #2980b9;
+}
+
+.contact-details {
+  font-size: 18px;
+  color: #2c3e50;
+  line-height: 1.4;
+}
+
+.map-container {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.map-image {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Right Content */
+.right-content {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.firm-description {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.firm-description p {
+  margin-bottom: 20px;
+  line-height: 1.8;
+  color: #2c3e50;
+  font-size: 16px;
+  text-align: justify;
+}
+
+.firm-description p:last-child {
+  margin-bottom: 0;
+}
+
+/* Contact Form */
+.contact-form {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h3 {
+  font-size: 20px;
+  color: #2c3e50;
+  margin-bottom: 25px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.form-row.full-width {
+  grid-template-columns: 1fr;
+}
+
+.form-input,
+.form-textarea {
+  padding: 12px 15px;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 14px;
+  font-family: inherit;
+  transition: border-color 0.3s ease;
+}
+
+.form-input:focus,
+.form-textarea:focus {
+  outline: none;
+  border-color: #2980b9;
+}
+
+.form-textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.submit-btn {
+  background: #27ae60;
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+.submit-btn:hover {
+  background: #219a52;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .content-grid {
+    gap: 30px;
+  }
+
+  .site-title {
+    font-size: 36px;
+  }
+
+  .firm-name {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 992px) {
+  .content-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .header-icon.left,
+  .header-icon.right {
+    position: static;
+    width: 60px;
+    height: 60px;
+  }
+
+  .header-content {
+    gap: 20px;
+  }
+
+  .main-content {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .site-title {
+    font-size: 28px;
+  }
+
+  .tagline {
+    font-size: 18px;
+  }
+
+  .firm-name {
+    font-size: 28px;
+  }
+
+  .firm-subtitle {
+    font-size: 18px;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-info,
+  .firm-description,
+  .contact-form {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    padding: 15px;
+  }
+
+  .main-content {
+    padding: 15px;
+  }
+
+  .firm-header {
+    margin-bottom: 30px;
+  }
+
+  .content-grid {
+    gap: 25px;
+  }
+}
+
+/* Animation Effects */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.firm-header,
+.left-content,
+.right-content {
+  animation: fadeInUp 0.8s ease-out;
+}
+
+.left-content {
+  animation-delay: 0.2s;
+}
+
+.right-content {
+  animation-delay: 0.4s;
+}
+
+/* Hover Effects */
+.team-image:hover {
+  transform: scale(1.02);
+  transition: transform 0.3s ease;
+}
+
+.contact-form:hover,
+.firm-description:hover,
+.contact-info:hover {
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+  transition: box-shadow 0.3s ease;
+}
+
+/* Background Pattern */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: radial-gradient(circle at 25% 25%, rgba(212, 175, 55, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 75% 75%, rgba(41, 128, 185, 0.1) 0%, transparent 50%);
+  z-index: -1;
+  pointer-events: none;
+}
