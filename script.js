@@ -247,21 +247,21 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   // City card handlers
-  elements.cityCards.forEach(card => {
-    card.addEventListener("click", function() {
-      const cityName = this.dataset.city;
+  // elements.cityCards.forEach(card => {
+  //   card.addEventListener("click", function() {
+  //     const cityName = this.dataset.city;
 
-      elements.cityCards.forEach(c => {
-        c.style.background = "rgba(255, 255, 255, 0.8)";
-        c.style.border = "none";
-      });
+  //     elements.cityCards.forEach(c => {
+  //       c.style.background = "rgba(255, 255, 255, 0.8)";
+  //       c.style.border = "none";
+  //     });
 
-      this.style.background = "rgba(41, 128, 185, 0.1)";
-      this.style.border = "2px solid #2980b9";
+  //     this.style.background = "rgba(41, 128, 185, 0.1)";
+  //     this.style.border = "2px solid #2980b9";
 
-      setTimeout(() => window.showDirectoryPage(cityName), 500);
-    });
-  });
+  //     setTimeout(() => window.showDirectoryPage(cityName), 500);
+  //   });
+  // });
 
   // Ad banner click handlers
   const attorneyMap = {
