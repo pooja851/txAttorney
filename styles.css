@@ -79,6 +79,7 @@ body {
   gap: 20px;
   padding: 20px;
   min-height: 600px;
+  padding-bottom: 100px;
 }
 
 /* Fixed sidebar styles with working auto scroll */
