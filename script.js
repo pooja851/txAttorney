@@ -188,17 +188,17 @@ document.addEventListener("DOMContentLoaded", () => {
   // Initialize sidebar scrolling with the new modular system
   // Only pause on hover of the sidebar itself, not parent
   const leftSidebarScroller = new VerticalScroller('.left-sidebar', {
-    speed: 3,
+    speed: 2,
     direction: 1,
-    delay: 2000,
+    delay: 500,
     pauseOnHover: true,
     pauseOnParentHover: false // Changed to false
   });
 
   const rightSidebarScroller = new VerticalScroller('.right-sidebar', {
-    speed: 3,
+    speed: 2,
     direction: -1, // Start scrolling up
-    delay: 2000,
+    delay: 500,
     pauseOnHover: true,
     pauseOnParentHover: false // Changed to false
   });
@@ -449,3 +449,8 @@ document.addEventListener("DOMContentLoaded", () => {
   // Export VerticalScroller for global use
   window.VerticalScroller = VerticalScroller;
 });
+// Duplicate the icons for seamless scroll
+// const injuryIconsContainer = document.querySelector('.scrolling-injury-icons');
+//     if (injuryIconsContainer) {
+//         injuryIconsContainer.innerHTML += injuryIconsContainer.innerHTML + injuryIconsContainer.innerHTML;
+//     }
