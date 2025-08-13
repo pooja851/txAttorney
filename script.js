@@ -68,14 +68,14 @@ function infiniteScroll({
 // Vertical, moving up
 infiniteScroll({
   containerId: 'left-sidebar',
-  speed: 0.5,
+  speed: 0.3,
   scrollDirection: 'vertical',
   moveDirection: 'forward',
   duplicateTimes: 5
 });
 infiniteScroll({
   containerId: 'right-sidebar',
-  speed: 0.5,
+  speed: 0.3,
   scrollDirection: 'vertical',
   moveDirection: 'forward',
   duplicateTimes: 5
